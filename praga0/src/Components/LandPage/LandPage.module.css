@@ -1,0 +1,25 @@
+*{
+    color: #313131;
+}
+h1{
+    font-size: 8em;
+    padding-top: 220px;
+}
+h2{
+    padding-left: 75px;
+    font-size: 2.3em;
+}
+.safeArea{
+    margin: 0px 120px;
+    height: 100vh;
+}
+b{
+    color: #3BE7B7;
+}
+.imgDoctor{
+    width: 34%;
+    position: absolute;
+    bottom: 0;
+    right: 120px;
+
+}
