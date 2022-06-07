@@ -1,0 +1,38 @@
+[
+  {
+    "nome": "Rato",
+    "texto": "Risco a saúde: Rato",
+    "sobre": "O é um roedor nortuno que vive nos esgotos das cidades.",
+    "prevencao": "Prevencao da praga"
+  },
+  {
+    "nome": "Escorpião",
+    "texto": "Risco a saúde: Escorpião",
+    "sobre": "É um aracnídeo extremamente perigoso por conta de seu veneno mortal.",
+    "prevencao": "Prevencao da praga"
+  },
+  {
+    "nome": "Mosquito",
+    "texto": "Risco a saúde: Mosquito",
+    "sobre": "Essa é uma praga muito comum que pode transmitir doenças como a dengue.",
+    "prevencao": "Prevencao da praga"
+  },
+  {
+    "nome": "Mosca",
+    "texto": "Risco a saúde: Mosca",
+    "sobre": "É uma praga extremamente comum, que se alimenta de dejetos, pode passar deonças.",
+    "prevencao": "Prevencao da praga"
+  },
+  {
+    "nome": "Armadeira",
+    "texto": "Risco a saúde: Aranha Armadeira",
+    "sobre": "A aranha armadeira é uma das aranhas mais venenosas, pode levar a morte em poucos minutos.",
+    "prevencao": "Prevencao da praga"
+  },
+  {
+    "nome": "Barbeiro",
+    "texto": "Risco a saúde: Barbeiro",
+    "sobre": "Este besouro vive no forro de madeira das casas, em lugares escuro. Ele pode passar doenças como a Chagas.",
+    "prevencao": "Prevencao da praga"
+  }
+]
