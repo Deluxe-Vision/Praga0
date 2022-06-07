@@ -3,7 +3,6 @@ import styles from './LandPage.module.css'
 import imgDoctor from '../../img/Doctor.svg'
 
 export const LandPage = () => {
-    console.log('opa')
   return (
     <div className={styles.safeArea}>
         <img className={styles.imgDoctor} src={imgDoctor}/>

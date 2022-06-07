@@ -1,11 +1,12 @@
 .main{
-    padding: 120px 120px 0 120px;
+    padding: 120px 120px;
+    display: flex;
+    height: auto;
 }
 
 .quickView{
-    float: left;
     width: 30%;
-    height: 550px;
+    height: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -20,14 +21,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 40px;
+    margin: 15px 0px;
     border-radius: 20px;
     cursor: default;
 }
 .quickView .princInfo{
     box-shadow: 1.7px 3px 6px 2px rgba(0, 0, 0, 0.575);
-    padding: 17px 20px;
+    padding: 0px 20px;
     border-radius: 20px;
+    padding: 30px 20px;
 }
 .quickView .princInfo h3{
     font-size: 20px;
@@ -38,8 +40,8 @@
 }
 .moreInfo{
     float: left;
-    width: 65%;
-    height: 550px;
+    width: 60%;
+    height: auto;
     margin-left: 5%;
 }
 .moreInfo h3{
@@ -49,9 +51,25 @@
     margin-top: 15px;
     font-size: 18px;
     width: 90%;
-    height: 200px;
+    height: auto;
+    padding-bottom: 25px;
     border-bottom: 2px solid black;
 }
 .moreInfo p:last-child{
     border: 0;
+}
+@media (max-width: 1060px){
+    .main{
+        padding: 120px 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .moreInfo{
+        width: auto;
+        margin: 55px 0;
+
+    }
+    .quickView{
+        width: 300px;
+    }
 }

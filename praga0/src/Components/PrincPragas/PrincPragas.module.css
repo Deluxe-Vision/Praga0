@@ -1,13 +1,14 @@
 .PrincPraga{
     height: 100vh;
     width: 80%;
-    padding: 120px ;
+    padding-left: 118px;
+    padding-top: 120px;
 }
 
 .Caixas{
     float: left;
     display: flexbox;
-    width: 600px;
+    width: 60%;
     
 }
 .Caixas * {
@@ -15,13 +16,15 @@
 }
 .info{
     float: left;
+    width: 30%;
+    
 }
 .info h4{
     font-size: 1.5em;
     margin-bottom: 15px;
 }
 .info p{
-    width: 400px;    
+    width: 100%;    
 }
 
 .PragaBox{
@@ -48,7 +51,8 @@
     float: left;
 }
 .Mapa button{
-    padding: 5px 15px;
+    margin-top: 20px;
+    padding: 8px 20px;
     border: 0;
     background-color: white;
     font-weight: 500;

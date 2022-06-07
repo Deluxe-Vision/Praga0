@@ -1,35 +1,28 @@
 import React, { useState } from 'react'
 import styles from './PrincPragas.module.css'
-
+const pragas = require('../../banco.json')
 export const PrincPragas = () => {
-    const pragas = [
-        {nome: 'Urso', texto: "Descrição: Urso"},
-        {nome: 'Calango', texto: "Descrição: Calango"},
-        {nome: 'DIOnossauro', texto: "Descrição: DIOnossauro"},
-        {nome: 'Baleia', texto: "Descrição: Baleia"},
-        {nome: 'Maças', texto: "Descrição: Maças"},
-        {nome: 'Abacate', texto: "Descrição: Abacate"},
-    ]
-    const [text, SetText] = useState()
-    function GetText(id){
-        SetText(pragas[id - 1].texto);
-    }
+
+  const [text, SetText] = useState()
+  const GetText = id => SetText(pragas[id].texto);
+
   return (
     <div className={styles.PrincPraga}>
-        <div className={styles.Praga}>
-            <div className={styles.Caixas}>
-                {pragas.map((praga, i) => (
-                    <div onMouseEnter={() => GetText(i)} className={styles.PragaBox}>{praga.nome}</div>
-                ))}
-            </div>
-            <div className={styles.info}>
-                <h4>Riscos a Saúde</h4>
-                <p>{text}</p>
-            </div>
+      <div className={styles.Praga}>
+        <div className={styles.Caixas}>
+          {pragas.map((praga, i) => (
+            <div onClick={() => window.location.href = `praga?${i}`}
+              onMouseEnter={() => GetText(i)} className={styles.PragaBox} > {praga.nome} </div>
+          ))}
         </div>
-        <div className={styles.Mapa}>
-            <button>Ver mais</button>
+        <div className={styles.info}>
+          <h4>Riscos a Saúde</h4>
+          <p>{text}</p>
         </div>
+      </div>
+      <div className={styles.Mapa}>
+        <button>Ver mais</button>
+      </div>
     </div>
   )
 }
